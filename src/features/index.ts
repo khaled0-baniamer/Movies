@@ -1,0 +1,5 @@
+export {default as HomeScreen} from "./Home"
+export {default as MoviesListScreen} from "./Movies"
+export {default as TVListScreen} from "./TV"
+export {default as MoviesDetails} from "./MoviesDetails"
+export {default as TVDetails} from "./TVDetails"
