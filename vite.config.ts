@@ -9,7 +9,7 @@ import path from "path";
 const root = path.resolve(__dirname, "src");
 config();
 export default defineConfig({
-  base: "/movies/",
+  base: "/movies",
   plugins: [react()],
   resolve: {
     alias: {
