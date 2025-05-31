@@ -11,7 +11,7 @@ import Layout from "./layout";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/movies">
       <Layout>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
