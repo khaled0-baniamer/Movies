@@ -59,7 +59,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/deploy_key \
             "$SERVER_USER@$SERVER_HOST" \
-            "mkdir -p /var/www/my-app"
+            "mkdir -p /var/www/movies"
 
       # 7. Deploy build
       - name: Deploy to Ubuntu
@@ -70,7 +70,7 @@ jobs:
           rsync -avz --delete \
             -e "ssh -i ~/.ssh/deploy_key" \
             dist/ \
-            "$SERVER_USER@$SERVER_HOST:/var/www/my-app/"
+            "$SERVER_USER@$SERVER_HOST:/var/www/movies/"
 
       # 8. Verify Nginx
       - name: Reload Nginx
